@@ -10,11 +10,11 @@ public class PostmanTest {
         //Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("some data")
+                .body("some")
                 .when()
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("some data"));
+                .body("data", equalTo("some value"));
     }
 }
