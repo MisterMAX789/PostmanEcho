@@ -10,7 +10,7 @@ public class PostmanTest {
         //Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("some")
+                .body("some value")
                 .when()
                 .post("/post")
                 .then()
